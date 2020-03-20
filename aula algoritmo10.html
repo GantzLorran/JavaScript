@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+		<head>
+		</head>
+	<body>
+		<script>
+			x = new Array();
+			menores = 0;
+			maiores = 0;
+			total = 0;
+			for (i = 0; i<5; i++){
+			x[i] = parseInt(prompt("Digite o número"));
+			if (x[i]>10){
+			   maiores++;
+			}
+			if (x[i]<0){
+				menores++;
+			}
+			total = total + x[i];
+		}
+		document.write("Maiores: " + maiores + "menores" + menores);
+		document.write("<br>" + "Total: " + total);
+		</script>
+	</body>
+</html>

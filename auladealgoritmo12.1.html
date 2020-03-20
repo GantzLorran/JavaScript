@@ -1,0 +1,24 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+		nome = new Array();
+		idade = new Array();
+		menor = 0;
+			for(i=0; i<4; i++){
+				nome[i] = (prompt("Digite um nome"));
+				idade[i] = parseInt(prompt("Digite o número"));
+				if(idade[i]> menor){
+					menor = idade[i];
+				}
+			}
+		for(i=0; i<4; i++){
+			if(idade[i]==menor){
+				document.write(nome[i]);
+			}
+		}
+		</script>
+	</body>
+</html>

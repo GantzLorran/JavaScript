@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+<script>
+    x = parseInt(prompt("digite um numero"));
+	while(x >=0){
+		document.write(x + "<br>");
+		x--;
+	}
+	</script>
+</head>
+<body>
+</body>
+</html>

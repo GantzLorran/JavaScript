@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8"/>
+		<script>
+			function teste(x){
+			q = x*x;
+			c = q*x;
+			document.getElementById("resposta").innerHTML = q + " - " + c;
+		}
+		</script>
+	</head>
+	<body>
+		<input type="number" onkeyup="teste(this.value)" />
+		<button>Enviar</button>
+		<div id="resposta"></div>
+	</body>
+</html>

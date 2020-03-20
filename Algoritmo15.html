@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8"/>
+		<script>
+			function teste(ano){
+			idade = 2017-ano;
+			x = "Em 2017, você completou " + idade + "de idade";
+			document.getElementById("resposta").innerHTML = x;
+		}
+		</script>
+	</head>
+	<body>
+		<input type="number" onblur="teste(this.value)" />
+		<button>Enviar</button>
+		<div id="resposta"></div>
+	</body>
+</html>

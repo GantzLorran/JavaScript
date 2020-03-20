@@ -1,0 +1,62 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<style>
+			ul{
+				list-style:none;
+			}
+			ul li{
+				display: inline;
+				background-color: #9cf;
+				padding:10px;
+				text-transform: uppercase;
+				margin: 0px;
+			}
+			ul li:hover{
+				background-color: #69f;
+				color: #fff;
+			}
+			p{
+				border: solid 1px #000;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="lcg">Campo Grande</li>
+			<li class="lbg">Bangu</li>
+			<li class="lsc">Santa Cruz</li>
+		</ul>
+		<p>
+			Escolha um bairro!
+		</p>
+		<p class="cg">
+		Campo Grande é um bairro quase nobre da capital do Rio de Janeiro, conhecido por muito como Barra 2, por ser um primo menos famoso da Barra da Tijuca e tbm pelo crescimento impressionante do bairro que conta com um pouco mais de 600 mil habitantes isso juntaria praticamente toda a zona sul tirando a rocinha é claro, líder de crescimento das contrutoras devido a Barra nao possuir mais espaço, uma espécie de "Tatuapé" do Rio de Janeiro. Se você perguntar sua localização para um cidadão, ele lhe responderá: "É perto de Santa Cruz, Bangu, Recreio, sabe?" e você vai ficar desesperado, porque com certeza pensará que estará perdido.
+		</p>
+		<p class="bg">
+			Bangu, é o principal prostíbulo bairro da cidade do Rio de Janeiro, e fica situado entre as favelas de Vila Aliança, Vila Vintém e Vila Kennedy.Também, o bairro já começou errado, sendo fundado por favelados que trabalhavam na Fábrica Bangu. Bangu é como uma ilha, cercado de favelas por todos os lados e foi descoberto pelo navegador português Castor de Andrade.
+		</p>
+		<p class="sc">
+		O barro de Santa Cruz está localizado na zona! ops.. oeste do Rio de Janeiro. É um local pacato do centro pra trás e pra todos os lados. Possui renda per capita negativa, pois todo mundo fez empréstimo consignado no BMG. Faz fronteira com Sepetiba, Itaguaí e Paciência, haja paciência! A principal atividade econômica do bairro é assalto à mão arm.... NÃÃÃO!!
+		</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document). ready(function() {
+					$("p") .hide();
+			});
+			$(".p") .click(function(){
+					$("p").hide();
+					$("cg") .show();
+			});
+			$(".p") .click(function(){
+					$("p").hide();
+					$("bg") .show();
+			});
+			$(".p") .click(function(){
+					$("p").hide();
+					$("sc") .show();
+			});
+		</script>
+	</body>
+</html>

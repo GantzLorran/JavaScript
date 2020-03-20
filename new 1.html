@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<style>
+			input{
+				width:95px;
+			}
+			button{
+				width: 55px;
+				height: 45px;
+			}
+		</style>
+		<meta charset="UTF-8" />
+		<script>
+		function numeros(x){
+			tela = document.getElementById("tela").value;
+			document.getElementById("tela").value = tela + x;
+		}
+		function soma(){
+			tela = document.getElementById("tela").value;
+			document.getElementById("temp").value = tela;
+			document.getElementById("tela").value = "";
+			
+		}
+		function Resultaldo(){
+			tela = document.getElementById("tela").value;
+			temp = document.getElementById("temp").value;
+			document.getElementById("tela").value = "resultado";
+			te = document.getElementById("temp").value;
+			alert (te+tel)
+		}
+		</script>
+	</head>
+	<body>
+		<div><input type="number" readonly id="tela" /></div>
+		<div><button onclick="numeros(1)">1</button> <button onclick="numeros(2)">2</button> <button onclick="numeros(3)">3</button></div>
+		<div><button onclick="numeros(4)">4</button> <button onclick="numeros(5)">5</button> <button onclick="numeros(6)">6</button></div>
+		<div><button onclick="numeros(7)">7</button> <button onclick="numeros(8)">8</button> <button onclick="numeros(9)">9</button></div>
+		<div><button onclick="soma()">+</button> <button onclick="numeros(0)">0</button> <button onclick="resultaldo()">=</button></div>
+		<br><input type="text" id="temp" value="0" />
+	</body>
+</html>

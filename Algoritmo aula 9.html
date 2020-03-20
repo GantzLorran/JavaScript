@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt">
+	<header>
+		<style> </style>
+			<meta charset="UTF-8">
+	</header>
+	<body>
+		<script>
+		 x = new Array();
+		 maior = 0;
+		 for (i = 0; i <= 7; i++){
+			x[i] = parseInt(prompt("Digite o "+(i+1)+"º número"));
+			if (i==0){
+				maior = x[i];
+			}
+			if (maior < x[i]){
+				maior = x[i];
+			}
+		 }
+		 document.write("O maior número é "+maior);
+		 
+		</script>
+	</body>
+</html>

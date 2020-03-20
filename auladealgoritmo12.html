@@ -1,0 +1,32 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+			function aumento(x){
+				for(i=0; i<4; i++){
+					salario[i] = salario[i] * x;
+				}
+				for(i=0; i<4; i++){
+					document.write("Nome: " + nome[i] + "<br>");
+					document.write("Salário: " + salario[i] + "<hr>");
+				}
+			}
+			nome = new Array();
+			salario = new Array();
+			
+			for(i=0; i<4; i++){
+				nome[i] = prompt("Digite um nome");
+				salario[i] = parseFloat(prompt("Digite a renda"));
+			}
+			for(i=0; i<4; i++){
+				document.write("Nome: " + nome[i] + "<br>");
+				document.write("Salário: " + salario[i] + "<hr>");
+			}
+			
+		</script>
+		<button onclick="aumento(1.05)">Aumentar 5%</button>
+		<button onclick="aumento(1.10)">Aumentar 10%</button>
+	</body>
+</html>

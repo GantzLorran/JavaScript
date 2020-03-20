@@ -1,0 +1,12 @@
+<html>
+	<head>
+	  <script>
+	  for(i = 1; i<=6; i++){
+		x=parseInt(prompt("digite 0 para par e 1 para impar"));
+		x=Math.floor(math.random()* 99);
+	   }
+	  </script>
+	</head>
+	<body>
+	</body>
+</html>

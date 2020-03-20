@@ -1,0 +1,36 @@
+<!doctype html>
+	<head>
+		<script>
+		function testando(){
+			usuario = parseInt(prompt("0-pedra 1-papel 2-tesoura"));
+			pc = Math.floor(Math.random() *3);
+			
+			if ((usuario == 1) && (pc == 0)){
+				document.getElementById ("resultado"). innerHTML = "ganhou";
+			}
+			if ((usuario == 2) && (pc == 1)){
+				document.getElementById ("resultado"). innerHTML = "ganhou";
+			}
+			if ((usuario == 0) && (pc == 2)){
+				document.getElementById ("resultado"). innerHTML = "ganhou";
+			}	
+			if ((usuario == 0) && (pc == 1)){
+				document.getElementById ("resultado"). innerHTML = "perdeu";
+			}
+			if ((usuario == 1) && (pc == 2)){
+				document.getElementById ("resultado"). innerHTML = "perdeu";
+			}
+			if ((usuario == 2) && (pc == 0)){
+				document.getElementById ("resultado"). innerHTML = "perdeu";
+			}
+			if (usuario == pc) {
+				document.getElementById("resultado"). innerHTML = "Empate";
+			}
+		}
+		</script>
+	</head>
+<body>
+<a href="#" onclick="testando()">clique para jogar</a>
+<div id="resultado"> o resultado aparecerá aqui</div>
+</body>
+</html>
