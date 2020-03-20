@@ -1,0 +1,35 @@
+body{
+    background-color:white;
+}
+#card{
+    z-index: 10;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px;
+    width:30%;
+    height:40%;
+    position: absolute;
+    left:35%;
+    padding: 38px;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 8px;
+    background-color: skyblue;
+    top:86pt;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn{
+    padding:7pt;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: darkgreen;
+    position:relative;
+    top:10px;
+}
+#imagem{
+    display:none;
+    position:relative;
+}

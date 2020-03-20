@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=" ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(68, 255, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui vai um resultado<strong> em JavaScript</strong></p>
+    <p>Apredendo a usar o <strong> DOM </strong> em JavaScript</p>
+    <div>Clique em mim</div>
+    <div id='msg'>Clique aqui </div>
+    <script>
+        //window.document.write(window.document.URL)
+        var corpo = window.document.body // cria uma variável para mexer no body
+        var p1 = document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito Assim: ' + p1.innerText)
+        p1.style.color = 'blue' // mudar a cor do <p>
+         corpo.style.background = 'black' //muda o cor do background do body
+        document.write(p1.innerHTML)
+            //window.alert(p1.innerText)//p1.innerText é melhor usar com window.alert porque ele elimina as tags do HTML
+       /* var d = window.document.getElementById('msg')
+            d.style.background = 'green'
+            d.innerText = 'Estou aguardando'*/
+        //window.document.getElementById('msg').innerText = 'Olá' //posso fazer dessa forma também
+            var d = window.document.querySelector('div#msg')
+            //todo div com id a gente coloca com # toda div com class é ponto.
+            d.style.background = 'gray'
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector da nacionalidade </title>
+    <style>
+        div#res{
+            height: 100px;
+            width: 290px;
+            text-align: center;
+            font-family: arial;
+        }
+        #txt{
+            font-family: helvetica;
+            text-align: center;
+        }
+        #botao1{
+            border: 1px solid;
+            background:rgb(98, 48, 199);
+            padding: 10px;
+            color:blanchedalmond;
+            font-family: arial;
+        }
+        #pais{
+            padding: 10px;
+        }
+        #botao1:hover{
+            background-color: rgb(26, 0, 78);
+            color: rgb(255, 255, 255);
+            transition: background-color 0.2s, color 0.2s;
+        }
+    </style>
+    <h1 id='txt'>Informe seu país</h1>
+    País: <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="informar()" id='botao1'>
+    <div id="res">
+
+    </div>
+</head>
+<body>
+    <script>//Meu primeiro Script que passei o maior sufoco pra resolver mas consegui 
+        function informar(){
+        var p = document.getElementById('pais')
+        var ps = pais.value //insere um valor para o input pais
+        if(ps == 'brasil'){
+            document.getElementById('res').innerHTML = 'Você é Brasileiro'
+        }
+        else if(ps != 'brasil'){
+            document.getElementById('res').innerHTML = 'Você é estrangeiro'
+        }
+    }
+    /*$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle(200);
+  });
+});*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+    <style>
+    div#area{
+        background:green;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        font: normal 20pt arial;
+    }
+    </style>
+</head>
+<body>
+    <div id='area'>
+        Interaja
+    </div>
+    <script>
+        //Posso colocar os eventos do mouse aqui para o JavaScript tratar deles sem precisar colocar no HTML!
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar(){
+            a.style.background = 'blue'
+            a.innerText = 'clicou'// Aqui é para mostrar a mensagem CLicou quando alguem clicar por cima do quadrado
+        }
+        function entrar(){
+            a.innerText = 'Entrou'
+        }
+        function sair(){
+            a.innerText = 'Saiu'
+        }
+    </script>
+</body>
+</html>

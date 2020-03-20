@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radar de velocidade</title>
+</head>
+    <style>
+        body#body1{
+            font-family: arial;
+            animation-name: body1;
+            -webkit-animation-name: body1;   
+            animation-duration: 1s;   
+            -webkit-animation-duration: 1s;
+            animation-timing-function: ease-in-out;   
+            -webkit-animation-timing-function: ease-in-out;       
+            visibility: visible !important;
+            animation-delay: 1s;
+            -webkit-animation-delay: 1s;
+            display: inline-block;
+        }
+        @keyframes body1 {
+    0% {
+        transform: translateX(-120%);/* define o tempo de slide do texto na tela */
+    }
+
+    100% {
+        transform: translateX(0%);
+    }   
+}
+
+        @-webkit-keyframes body1 {
+        0% {
+        -webkit-transform: translateX(-150%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+        input#botao2{
+            background: rgb(34, 199, 255);
+            border: hidden 2px;
+            box-shadow: 2px 1px 2px black;
+            padding: 8px;
+            color:#fff;
+        }
+        input#botao2:hover{
+            background: rgb(33, 52, 228);
+            color: rgb(255, 255, 255);
+            transition: background-color 0.2s;
+            
+        }
+        input#botao3{
+            padding: 8px;
+        }
+    </style>
+<body id='body1'>
+    <h1 id='texto1'>Informe sua velocidade</h1><br>
+    Velocidade: <input id='botao3' type="number" name="txtvel" id="txtvel" value="0">
+    <input id='botao2' type="button" value="verificar" onclick='calcular()'>
+    <div id="res">
+
+
+    </div>
+    <script>
+        function calcular(){
+            var tx = document.getElementById("txtvel").value
+            window.document.getElementById("res").innerHTML = tx
+            
+        }
+    </script>
+</body>
+</html>
