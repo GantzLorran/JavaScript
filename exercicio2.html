@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<button onclick="myFunction()">Clique</button>
+
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function myFunction(){
+			var text = "";
+			var i = 0;
+			while(i < 5){
+				i++;
+			if(i === 3){
+				continue;
+			}
+			text += "<br> O número é " + i;
+		  	}
+		  	document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+	</body>
+	<footer>
+	</footer>
+</html>

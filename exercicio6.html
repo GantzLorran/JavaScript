@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	</head>
+	<body>
+		<div>
+			<label for="valor">Digite o valor de sua compra: </label>
+			<input type="text" id="valor" name="valor" required>
+		</div>
+		<div>
+			<p>Qual a sua forma de pagamento?</p>
+			<input type="radio" name="pagamento" id="debito" value="debito">
+			<label for="debito"> Débito </label>
+			<br>
+			<input type="radio" name="pagamento" id="credito" value=" credito">
+			<label for="credito"> Cartão de crédito </label>
+			<br>
+			<input type="radio" name="pagamento" id="alimentacao" value="alimentacao">
+			<label for="alimentacao"> Alimentação </label>
+		</div>
+		<div>
+			<p> Desconto e valor a pagar: </p>
+			<input type="text" id="pagar" name="pagar">
+			<input type="button" id="botao1" value="Calcular" onclick="calcular()">
+	<script>
+		function calcular(){
+			var valor = document.getElementById("valor").value;
+			var resultado = document.getElementById("pagar");
+			var debito = document.getElementById("debito");
+			var credito = document.getElementById("credito");
+			var alimentacao = document.getElementById("alimentacao");
+			var desconto = 0;
+			if(valor>99.9){
+				if(credito.checked){
+					desconto = valor*0.05; // 5% de desconto
+					valor = valor*0.95;
+				}
+				if(debito.checked){
+					desconto = valor*0.20; // 50% de desconto
+					valor = valor*0.75;
+				}
+				if(alimentacao.checked){
+					desconto = valor*0.25; // 45% de desconto
+					valor = valor*0.85;
+				}
+			}
+			resultado.value = "Desconto: "+desconto+". Pagar: "+valor;
+		}
+	</script>
+	</body>
+</html>

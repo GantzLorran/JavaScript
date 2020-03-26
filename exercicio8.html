@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8 - JavaScript</title>
+</head>
+<body>
+    <h2>Lorran Games</h2>
+    <h3>Lista de jogos e Consoles</h3>
+    <input type="text" name="valor" id="valor" placeholder="Escolha um jogo...."></br>
+    <h2>Acrescentar um Game ou Console</h2>
+    <input type="text" placeholder="Adicione um game ou console." id="add"><br><br>
+    <input type="button" value="Adicionar" onclick="addJogoConsole()">
+    <!--<h3>Escolha a forma de pagamento</h3>
+    <input type="radio" name="pagamento" id="debito" value="debito">
+    <label for="debito">Débito</label></br>
+    <input type="radio" name="pagamento" id="debito" value="credito">
+    <label for="credito">Crédito</label></br>
+    <input type="radio" name="pagamento" id="debito" value="dinheiro">
+    <label for="dinheiro">Dinheiro</label></br>
+    <input type="text" placeholder="Aqui irá aparecer o total." disabled>-->
+    <div id="divJogos">
+        
+    </div>
+    <script>
+        var p = 0;
+        var jogos = ['Uncharted 4 R$ 90.00',
+        'God of war 4 R$ 190.00', 
+        'Days Gone R$ 180.00', 
+        'Forza horizon 3 R$ 50.00', 
+        'Forza Horizon 4 R$ 70.00', 
+        'Gears of War R$ 150.00', 
+        'The last os Us part II R$ 250.00', 
+        'Dragon Ball Kakarot R$ 190.00', 
+        'Alan Wake R$ 30.00'];
+        document.getElementById('divJogos').innerHTML = jogos;
+        function addJogoConsole(){
+        var add = document.getElementById("add");
+        var a = add.value;
+        jogos.push(a);
+        document.getElementById("divJogos").innerHTML = jogos;
+
+        }
+        
+        function enviar(){
+            var nome = document.getElementById("nome");
+            var email = document.getElementById("email");
+            var e = email.value;
+            var n = nome.value;
+            if(n == "" && e == ""){
+                window.confirm("O campo nome e email precisam ser preenchidos...");
+            }else{
+                window.confirm("Usuário cadastrado com sucesso...");
+            }
+            
+        }
+    </script>
+</body>
+</html>

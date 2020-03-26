@@ -1,0 +1,36 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Exercicio 7 
+	</title>
+</head>
+<body>
+	<form action="/action.html">
+		<input type="checkbox" name="coffee" value="creme"> Com creme <br>
+		<input type="checkbox" name="coffee" value="açucar"> Com açucar<br>
+		<br>
+
+		<input type="button" onclick="myFunction()" value="send order">
+		<br><br>
+		<input type="text" id="order" size="60" readonly>
+		<input type="submit" value="Submit">
+	</form>
+	<script type="text/javascript">
+		function myFunction(){
+			var coffee = document.forms[0];
+			var txt = "";
+			var i;
+			for(i = 0; i < coffee.length; i++){
+				if(coffee[i].checked){
+					txt = txt + coffee[i].value + " ";
+
+				}
+			}
+			document.getElementById("order").value = "Você pediu um café com: " + txt;
+		}
+	</script>
+</body>
+</html>
